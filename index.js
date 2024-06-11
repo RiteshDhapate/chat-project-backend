@@ -23,8 +23,7 @@ export const io = new Server(server, {
 
 
 
-async function init() {
-  await DBConnection();
+  DBConnection();
   app.use(express.json());
   app.use(cors());
   app.use("/api/v1",userRoute);
@@ -36,9 +35,9 @@ async function init() {
   server.listen(PORT, () => {
     console.log(`listening on port ${PORT} `);
   });
-}
 
-init();
+
+
 
 
 
