@@ -9,7 +9,7 @@ import userRoute from "./files/routes/user.route.js";
 import jwt from "jsonwebtoken";
 import { insertUserMessage } from "./files/functions/insertUserMessage.js";
 import { insertGroupMessage } from "./files/functions/insertGroupMessage.js";
-// import socketData from "./files/socket/index.js";
+
 
 
 const PORT = process.env.PORT || 2001;
